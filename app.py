@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # Load the trained Random Forest model
-with open('rf_model.pkl', 'rb') as file:
+with open('./data/rf_model.pkl', 'rb') as file:
     rf_model = pickle.load(file)
 
 # Title for the app
