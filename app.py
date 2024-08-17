@@ -7,6 +7,8 @@ import numpy as np
 with open('./data/rf_model.pkl', 'rb') as file:
     rf_model = pickle.load(file)
 
+print("pickle loaded")
+
 # Title for the app
 st.title("Life Expectancy Prediction")
 
@@ -34,6 +36,7 @@ def user_input_features():
 
 # Get user input data
 input_df = user_input_features()
+print(input_df)
 
 # Display user input data on the main page
 st.subheader("User Input Features")
