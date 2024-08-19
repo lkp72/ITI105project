@@ -56,4 +56,7 @@ if st.button("Predict Life Expectancy"):
     
     # Make the prediction
     prediction = rf_model.predict(input_data)[0]
+
+    # Display the predicted value
+    st.success(f"Predicted Life Expectancy: {prediction:.2f} years")
     
