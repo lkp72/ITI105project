@@ -1,11 +1,14 @@
 import streamlit as st
 import pickle
+import joblib
 import pandas as pd
 import numpy as np
 
 # Load the trained Random Forest model
-with open('./data/rf_model.pkl', 'rb') as file:
-    rf_model = pickle.load(file)
+#with open('./data/rf_model.pkl', 'rb') as file:
+#    rf_model = pickle.load(file)
+# Load the trained model
+rf_model = joblib.load('rf_model.pkl')
 
 # Define the feature columns - must match the columns used in the training script
 feature_cols = [
