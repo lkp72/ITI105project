@@ -21,9 +21,9 @@ feature_cols = [
 st.title("Life Expectancy Prediction")
 
 # Numerical inputs for each feature
-Infant_deaths = st.number_input("Infant deaths", min_value=0, max_value=1000, step=0.5,format="%.2f", value=0.0)
-Under_five_deaths = st.number_input("Under five deaths", min_value=0, max_value=1000, step=0.5,format="%.2f", value=0.0)
-Adult_mortality = st.number_input("Adult mortality", min_value=0, max_value=1000, step=0.5,format=“%.2f”, value=0.0)
+Infant_deaths = st.number_input("Infant deaths", min_value=0, max_value=1000, step=0.5,format='%.2f', value=0.0)
+Under_five_deaths = st.number_input("Under five deaths", min_value=0, max_value=1000, step=0.5,format='%.2f', value=0.0)
+Adult_mortality = st.number_input("Adult mortality", min_value=0, max_value=1000, step=0.5,format='%.2f', value=0.0)
 Alcohol_consumption = st.number_input("Alcohol consumption", min_value=0.0, max_value=100.0, step=1,format=“%.2f”, value=0.0)
 Hepatitis_B = st.number_input("Hepatitis B (%)", min_value=0.0, max_value=100.0, step=1,format=“%.2f”, value=100.0)
 Measles = st.number_input("Measles cases", min_value=0, max_value=100.0, step=1,format=“%.2f”, value=100.0)
