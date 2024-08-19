@@ -21,17 +21,17 @@ feature_cols = [
 st.title("Life Expectancy Prediction")
 
 # Numerical inputs for each feature
-Infant_deaths = st.number_input("Infant deaths", min_value=0, max_value=1000, value=0)
-Under_five_deaths = st.number_input("Under five deaths", min_value=0, max_value=1000, value=0)
-Adult_mortality = st.number_input("Adult mortality", min_value=0, max_value=1000, value=0)
+Infant_deaths = st.number_input("Infant deaths", min_value=0, max_value=1000, value=0.0)
+Under_five_deaths = st.number_input("Under five deaths", min_value=0, max_value=1000, value=0.0)
+Adult_mortality = st.number_input("Adult mortality", min_value=0, max_value=1000, value=0.0)
 Alcohol_consumption = st.number_input("Alcohol consumption", min_value=0.0, max_value=100.0, value=0.0)
-Hepatitis_B = st.number_input("Hepatitis B (%)", min_value=0.0, max_value=100.0, value=0.0)
-Measles = st.number_input("Measles cases", min_value=0, max_value=1000000, value=0)
-BMI = st.number_input("BMI", min_value=0.0, max_value=100.0, value=0.0)
-Polio = st.number_input("Polio (%)", min_value=0.0, max_value=100.0, value=0.0)
-Diphtheria = st.number_input("Diphtheria (%)", min_value=0.0, max_value=100.0, value=0.0)
-Incidents_HIV = st.number_input("Incidents of HIV", min_value=0, max_value=1000, value=0)
-GDP_per_capita = st.number_input("GDP per capita", min_value=0.0, max_value=100000.0, value=0.0)
+Hepatitis_B = st.number_input("Hepatitis B (%)", min_value=0.0, max_value=100.0, value=100.0)
+Measles = st.number_input("Measles cases", min_value=0, max_value=100.0, value=100.0)
+BMI = st.number_input("BMI", min_value=0.0, max_value=40.0, value=25.0)
+Polio = st.number_input("Polio (%)", min_value=0.0, max_value=100.0, value=100.0)
+Diphtheria = st.number_input("Diphtheria (%)", min_value=0.0, max_value=100.0, value=100.0)
+Incidents_HIV = st.number_input("Incidents of HIV", min_value=0, max_value=100.0, value=0.0)
+GDP_per_capita = st.number_input("GDP per capita", min_value=0.0, max_value=150000.0, value=0.0)
 Schooling = st.number_input("Schooling (years)", min_value=0.0, max_value=20.0, value=0.0)
 
 # Dropdown for Economy Status
